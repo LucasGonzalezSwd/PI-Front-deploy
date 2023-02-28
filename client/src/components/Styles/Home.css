@@ -1,0 +1,158 @@
+
+
+/* ----HOME---- */
+.container_home{
+    
+    background-color: rgb(204, 204, 204);
+    background-image: url('../images/foto4.jpg');
+    background-size: contain;
+    background-repeat: repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+            /* ---HOME NAV */
+.navbar_home{
+      background-color: rgba(0, 0, 0, 0.231);
+      width: 100%;
+      height: 200px;
+  }
+            
+#open_nav{
+    width: 0px;
+    height: 0px;
+    font-size: 0px;
+    padding: 0;
+    position:absolute;
+    margin-left: -1600px;
+ }
+#close_nav{
+    width: 0px;
+    height: 0px;
+    font-size: 0px;
+    padding: 0;
+            }
+            
+.home_navbar_up{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    height: 45%;
+    width: 100%;
+    cursor: default;
+            }
+.home_navbar_up h1{
+    font-size: 3.5em;
+    color: rgb(255, 255, 255);
+            }
+                        
+.home_navbar_up a button{
+    width: 220px;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    cursor: pointer;
+    border-radius: 15px;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.905);
+    margin-top: 2px;
+            }
+
+
+
+.home_navbar_up a button:hover{
+    
+    color: rgb(232, 235, 237);
+    transition: .3s;
+    box-shadow:0px 2px 10px 5px #ffffff83;
+    cursor: pointer;
+   
+            }
+.home_navbar_up a button h1{
+    font-size: 1.35em;
+    width: fit-content;
+            }
+            
+.home_navbar_f{
+    margin-top: 28px;
+    display: flex;
+    justify-content: space-evenly;
+    
+    height: 40%;
+    width: 100%;
+            }
+            
+.home_navbar_f a button{
+    padding: 0;
+    margin: 0;
+    height: 0px;
+    width: 0px;
+   
+            }
+.home_navbar_f a button:hover{
+    height: 0px;
+    width: 0px;
+            }
+            
+            .home_navbar_f select:hover{
+               
+                box-shadow:0px 2px 10px 5px #ffffff83;
+
+                        }
+.home_navbar_f select{
+    background-color: rgba(0, 0, 0, 0.905);
+    border: 1px solid rgba(0, 0, 0, 0.558);
+    border-radius: 15px;
+    font-size: .87em;
+    padding-left: 30px;
+    color: rgb(255, 255, 255);
+    height: 45px;
+    width: 100%;
+            }
+            
+.home_navbar_f button{
+    font-size: .5em;
+    border: none;
+    border-radius: 15px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.905);
+    border: 1px solid rgba(0, 0, 0, 0.558);
+    width: 300px;
+    margin: 30px -25px;
+    margin-left: -100px;
+    transition: .3s;
+    color: rgb(255, 255, 255);
+            }
+.home_navbar_f button:hover{
+    box-shadow:0px 2px 10px 5px #ffffff83;
+    border-radius: 15px;
+    margin-left: -100px;
+    cursor: pointer;
+            }
+.home_navbar_f div{
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 240px;
+            }
+           
+.home_navbar_f div label{
+    height: 33px;
+            }
+.page_count_cards{
+    
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 85%;
+    
+}          
+            
+            

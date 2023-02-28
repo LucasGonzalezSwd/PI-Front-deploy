@@ -1,0 +1,51 @@
+#cont{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.231);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#container_landing{
+   
+    background-image: url("../images/foto3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+#container_landing h1{
+    color: rgb(255, 255, 255);
+    font-size: 12em;
+    font-weight: 600;
+    letter-spacing: 8px;
+    padding-top: 80px;
+    margin: 0px;
+    cursor: default;
+    
+}
+#container_landing button{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin: 0px;
+    border: none;
+    border-radius: 15px;
+    height: 50px;
+    width:fit-content;
+    transition: .3s;
+    background-color: rgba(0, 0, 0, 0.775);
+    color: rgb(255, 255, 255);
+}
+#container_landing button:hover{
+  
+    
+    cursor: pointer;
+    height: 50px;
+    
+    background-color: rgba(0, 0, 0, 0.851);
+    box-shadow:0px 2px 10px 5px #ffffff83;
+    color: rgb(255, 255, 255);
+    
+}

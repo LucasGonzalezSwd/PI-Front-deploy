@@ -1,0 +1,94 @@
+.container_cards{
+    display: flex;
+    justify-content: center;
+    border-radius: 7px;
+    background-color: rgba(0, 0, 0, 0.919);
+    margin: 10px;
+    height:480px;
+    width: 410px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.container_cards a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 20px;
+    height: 90%;
+    width: 50%;
+   margin-right: 20px;
+   overflow-y: hidden;
+   
+   
+    
+}
+
+.container_cards p{
+    color: rgb(252, 252, 252);
+    
+    font-size: 1.1em;
+    height: 90%;
+    width: 50%;
+    margin-top: 25px;
+    margin-left: 10px;
+    text-align: center;
+    line-height: 40px;
+    overflow-y: hidden;
+    
+    
+}
+.container_cards p button{
+    position:inherit;
+    
+    height: 35px;
+    width: fit-content;
+    font-size: 1.3em;
+    border: none;
+    border-radius: 15px;
+    transition: .3s;
+    color: rgb(255, 255, 255);
+    background-color: rgba(172, 172, 172, 0.304);
+}
+.container_cards p button:hover{
+    background-color: red;
+    cursor: pointer;
+}
+.container_cards a h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 250px;
+    height: 200px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.664);
+    border-radius: 10px;
+}
+.img div{
+    font-size: 1em;
+    color: transparent;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 0%;
+    border-radius: 10px;
+    padding: 10px;
+    transition: .5s;
+}
+.container_cards:hover a .img div{
+    color: brown;
+    background-color: rgba(0,0,0,.58);
+    height: 94%;
+}
+
+.list_card{
+    list-style-type: none;
+   
+}

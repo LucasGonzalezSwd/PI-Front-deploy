@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#createrecipe_container{
+    font-family:monospace;
+    background-image: url('../images/foto1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100%;
+    
+ 
+    
+}
+/* #cont-btn-home{
+    background-color: var(--color-primary);
+} */
+
+#button_home a button{
+   
+    width: 220px;
+    text-align: center;
+    font-size: 1em;
+    padding: 12px;
+    color: white;
+    cursor: pointer;
+    border-radius: 15px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.905);
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 15px;
+    
+}
+#button_home a button:hover{
+    transition: .3s;
+    box-shadow:0px 2px 10px 5px #ffffff83;
+    cursor: pointer;
+}
+
+#form_tittle{
+    
+    font-size: 1.5em;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    margin-left: 24.5%;
+    height: 80px;
+    
+   
+}
+
+#create_form{
+    background-color: rgba(0, 0, 0, 0.489);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   width: 100vw;
+   height: 500px;
+  
+    
+}
+#create_form p{
+    margin-top: 6px;
+    color: #ff0202d8;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+#left_form{
+    height: 100%;
+    margin-top: 5px;
+    margin-left: 60px;
+   width: 50%;
+   height: 400px;
+  
+   
+   
+}
+
+.input_form{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 65px;
+    
+   
+    
+}
+.input_form label{
+    color: rgb(255, 255, 255);
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.input_form input{
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.611);
+    height: 25px;
+    width: 600px;
+    border: 1px solid rgba(255, 255, 255, 0.601);
+    border-radius: 10px;
+    padding-left: 10px;
+}
+.input_form input:hover{
+    box-shadow:0px 2px 10px 5px #ffffff83;
+}
+
+
+#diets_select select{
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.612);
+    margin-right: 0px;
+    height: 29px;
+    width: 200px;
+    border: 1px solid rgba(255, 255, 255, 0.598);
+    border-radius: 15px;
+}
+
+#diets_c{
+    color: rgb(255, 255, 255);
+    display: flex;
+    font-weight: bold;
+    justify-content: flex-start;
+    height:30%;
+    width: 22%;
+    margin-left: 160px;
+    margin-top: -75px;
+    overflow-y: scroll; 
+    
+}
+#diets_c::-webkit-scrollbar {
+    -webkit-appearance:none;
+    width:6px;
+}
+#diets_c::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.854);
+    border-radius: 30px;
+}
+#diets_c ul li button{
+    background-color: rgb(205, 18, 18);
+    height: 26px;
+    width: 26px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    padding-right: 1px;
+
+}
+#diets_c ul li button:hover{
+    cursor: pointer;
+
+}
+
+#submit_butt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    
+}
+#submit_butt button{
+    width: fit-content;
+    text-align: center;
+    font-size: 1em;
+    padding: 12px;
+    color: white;
+    cursor: pointer;
+    border-radius: 15px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.905);
+    margin-left: 10px;
+    border-radius: 15px;
+}
+#submit_butt button:hover{
+    box-shadow:0px 2px 10px 5px #ffffff83;
+}
+
+#form_right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 95%;
+    width: 38%;
+    margin-top: 5px;
+    overflow-y:scroll
+   
+}
+#form_right::-webkit-scrollbar {
+    -webkit-appearance:none;
+    width:6px;
+}
+#form_right::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.854);
+    border-radius: 30px;
+}
+#form_right label{
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 10px;
+    
+}
+#form_right button{
+    width: fit-content;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 12px;
+    color: white;
+    cursor: pointer;
+    border-radius: 15px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.905);
+    margin-top: 10px;
+    
+    border-radius: 15px;
+}
+#form_right button:hover{
+    
+    box-shadow:0px 2px 10px 5px #ffffff83;
+}
+#form_right input{
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.897);
+    margin: 15px;
+    height: 25px;
+    width: 500px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    
+}
+#form_right input:hover{
+    box-shadow:0px 2px 10px 5px #ffffff83;
+}
+
+
+
