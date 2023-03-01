@@ -46,7 +46,7 @@ export function getRecipesById(id){
 
 export function getRecipesByName(name){
      return async function(dispatch){
-        const re = await axios(`http://localhost:3001/recipes?name=${name}`)
+        const re = await axios(`https://pi-back-deploy.vercel.app/recipes?name=${name}`)
         dispatch({
              type: GET_RECIPES_NAME,
              payload: re.data
@@ -90,13 +90,13 @@ export function createOrNot(payload){
 
 export function createRecipe(payload){
      return async function(dispatch){
-        await axios.post('http://localhost:3001/recipe', payload)
+        await axios.post('https://pi-back-deploy.vercel.app/recipe', payload)
      }
 }
 
 export function deleteRecipe(id){
      return async function(dispatch){
-         await axios.delete(`http://localhost:3001/recipe/${id}`)
+         await axios.delete(`https://pi-back-deploy.vercel.app/recipe/${id}`)
          dispatch({
              type: DELETE_RECIPE,
              payload: id
