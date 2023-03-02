@@ -14,7 +14,7 @@ import axios from 'axios'
 
 export function getAllRecipes(){
      return async function(dispatch){
-        const re = await axios.get('pi-back-deploy-production.up.railway.app/recipes')
+        const re = await axios.get('http://localhost:3001/recipes')
           return dispatch({
               type: GET_ALL_RECIPES,
               payload: re.data
@@ -25,7 +25,7 @@ export function getAllRecipes(){
 
 export function getAllDiets(){
      return async function(dispatch){
-        const re = await axios('pi-back-deploy-production.up.railway.app/diets')
+        const re = await axios('http://localhost:3001/diets')
          dispatch({
             type: GET_ALL_DIETS,
             payload: re.data
