@@ -90,13 +90,13 @@ export function createOrNot(payload){
 
 export function createRecipe(payload){
      return async function(dispatch){
-        await axios.post('pi-back-deploy-production.up.railway.app/recipe', payload)
+        await axios.post('http://localhost:3001/recipe', payload)
      }
 }
 
 export function deleteRecipe(id){
      return async function(dispatch){
-         await axios.delete(`pi-back-deploy-production.up.railway.app/recipe/${id}`)
+         await axios.delete(`http://localhost:3001/recipe/${id}`)
          dispatch({
              type: DELETE_RECIPE,
              payload: id
