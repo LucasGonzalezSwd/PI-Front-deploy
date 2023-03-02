@@ -36,7 +36,7 @@ export function getAllDiets(){
 
 export function getRecipesById(id){
       return async function(dispatch){
-        const re = await axios(`pi-back-deploy-production.up.railway.app/${id}`)
+        const re = await axios(`http://localhost:3001/${id}`)
         dispatch({
             type: GET_RECIPES_ID,
             payload: re.data
@@ -46,7 +46,7 @@ export function getRecipesById(id){
 
 export function getRecipesByName(name){
      return async function(dispatch){
-        const re = await axios(`pi-back-deploy-production.up.railway.app/recipes?name=${name}`)
+        const re = await axios(`http://localhost:3001/recipes?name=${name}`)
         dispatch({
              type: GET_RECIPES_NAME,
              payload: re.data
