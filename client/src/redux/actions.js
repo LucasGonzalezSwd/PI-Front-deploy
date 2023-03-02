@@ -11,11 +11,10 @@ import {GET_ALL_RECIPES,
      } from './actionType'
 import axios from 'axios'
 
-const { API_URL} = process.env;
 
 export function getAllRecipes(){
      return async function(dispatch){
-        const re = await axios.get(`${API_URL}/recipes`)
+        const re = await axios.get('http://localhost:3001/recipes')
           return dispatch({
               type: GET_ALL_RECIPES,
               payload: re.data
@@ -26,7 +25,7 @@ export function getAllRecipes(){
 
 export function getAllDiets(){
      return async function(dispatch){
-        const re = await axios(`${API_URL}/diets`)
+        const re = await axios('http://localhost:3001/diets')
          dispatch({
             type: GET_ALL_DIETS,
             payload: re.data
@@ -37,7 +36,7 @@ export function getAllDiets(){
 
 export function getRecipesById(id){
       return async function(dispatch){
-        const re = await axios(`${API_URL}/${id}`)
+        const re = await axios(`http://localhost:3001/${id}`)
         dispatch({
             type: GET_RECIPES_ID,
             payload: re.data
@@ -47,7 +46,7 @@ export function getRecipesById(id){
 
 export function getRecipesByName(name){
      return async function(dispatch){
-        const re = await axios(`${API_URL}/recipes?name=${name}`)
+        const re = await axios(`http://localhost:3001/recipes?name=${name}`)
         dispatch({
              type: GET_RECIPES_NAME,
              payload: re.data
@@ -91,13 +90,13 @@ export function createOrNot(payload){
 
 export function createRecipe(payload){
      return async function(dispatch){
-        await axios.post(`${API_URL}/recipe`, payload)
+        await axios.post('http://localhost:3001/recipe', payload)
      }
 }
 
 export function deleteRecipe(id){
      return async function(dispatch){
-         await axios.delete(`${API_URL}/recipe/${id}`)
+         await axios.delete(`http://localhost:3001/recipe/${id}`)
          dispatch({
              type: DELETE_RECIPE,
              payload: id
